@@ -1,0 +1,106 @@
+:root{
+    --color-primary:#0477fb;
+    --color-secondary:#ffffff;
+    --color-ternairy:#1e1e1e;
+    --color-hover:#3393ff;
+    --color-icon-hover:#0078ff;
+    --light-blue-color:#cde1f8;
+    --blue-overlay-color:#0077ffac;
+    --bg-nav-color:rgba(0, 0, 0, 0.9);
+    --layout-color:rgba(0, 0, 0, 0.6);
+    --light-color:#4e4e4e;
+    --fw-600:600;
+    --transition-duration:.5s;
+}
+html{
+    scroll-behavior: smooth;
+}
+.light-color{
+    color: var(--light-color) ;
+}
+main header{
+    min-height: 50vh;
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+header h1{
+    font-size: 3.5rem;
+}
+.header-overlay{
+    background-color: var(--blue-overlay-color);
+}
+.breadcrumb li::before{
+    color: #ffffff7d !important; 
+}
+.blog-links ul::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background-color: var(--color-primary);
+}
+.be-p::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background-color: var(--color-primary);
+}
+.slide::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 5px;
+    height: 60%;
+    background-color: var(--color-primary);
+}
+.search-btn:hover{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+}
+.search-btn{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+.dash li::before{
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 45%;
+    transform: translateY(-50%);
+    height: .5px;
+    width: 10px;
+    background-color: var(--color-primary);
+}
+.recent ul li a{
+    transition: var(--transition-duration);
+}
+.recent ul li a:hover{
+    color: var(--color-primary) !important;
+}
+.tags ul li{
+    background-color: var(--color-primary);
+}
+.comments h2::before, .reply h2::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 100px;
+    background-color: var(--color-primary);
+}
+.reply button{
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+    transition: var(--transition-duration);
+}
+.reply button:hover{
+    background-color: #0062d3;
+    box-shadow: 0 0 0 4px var(--light-blue-color);
+}

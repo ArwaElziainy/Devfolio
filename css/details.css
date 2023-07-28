@@ -1,0 +1,42 @@
+:root{
+    --color-primary:#0477fb;
+    --color-secondary:#ffffff;
+    --color-ternairy:#1e1e1e;
+    --color-hover:#3393ff;
+    --color-icon-hover:#0078ff;
+    --light-blue-color:#cde1f8;
+    --blue-overlay-color:#0077ffac;
+    --bg-nav-color:rgba(0, 0, 0, 0.9);
+    --layout-color:rgba(0, 0, 0, 0.6);
+    --light-color:#4e4e4e;
+    --fw-600:600;
+    --transition-duration:.5s;
+}
+html{
+    scroll-behavior: smooth;
+}
+.light-color{
+    color: var(--light-color) ;
+}
+main header{
+    min-height: 50vh;
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+header h1{
+    font-size: 3.5rem;
+}
+.header-overlay{
+    background-color: var(--blue-overlay-color);
+}
+.breadcrumb li::before{
+    color: #ffffff7d !important; 
+}
+.carousel-indicators button{
+    border: 1px solid var(--color-icon-hover) !important;
+}
+.carousel-indicators button.active{
+    background-color: var(--color-icon-hover);
+}
